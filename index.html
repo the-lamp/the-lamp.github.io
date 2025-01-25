@@ -3,55 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Lamp RKP - Redirecting you to the official website.">
-  <meta name="keywords" content="The Lamp RKP, Redirect, 404 page">
-  <meta name="author" content="The Lamp RKP Organization">
-  <meta http-equiv="refresh" content="0; URL=https://thelamp.site"> <!-- Fallback Meta Redirect after 5 seconds -->
-  
-  <title>The Lamp RKP | Redirecting...</title>
-  
-  <!-- Dynamic Redirection Logic -->
-  <script>
-    (function() {
-      const currentURL = window.location.href;
-      const mainURL = "https://thelamp.site";
-      const fallbackURL = "https://the-lamp.github.io";
+  <meta name="description" content="Welcome to The Lamp - Redirecting you to the official website. Explore knowledge and insights at our new domain.">
+  <meta name="keywords" content="The Lamp, Redirect, SEO, Knowledge Platform, The Lamp RKP">
+  <meta name="author" content="The Lamp Organization">
+  <title>Welcome to The Lamp</title>
 
-      // Check if the URL contains "/RKP" sub-path
-      if (currentURL.includes("/RKP")) {
-        // Redirect to fallback URL
-        window.location.replace(fallbackURL);
-      } else {
-        // Default Redirect to main website
-        window.location.replace(mainURL);
-      }
-    })();
-  </script>
-
-  <!-- Open Graph Tags for Social Media -->
-  <meta property="og:title" content="Redirecting to The Lamp RKP">
-  <meta property="og:description" content="You are being redirected to the official The Lamp RKP website.">
-  <meta property="og:url" content="https://thelamp.site">
+  <!-- SEO Meta Tags -->
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Welcome to The Lamp - Official Website">
+  <meta property="og:description" content="Redirecting to The Lamp's official website. Stay updated with knowledge and insights.">
+  <meta property="og:url" content="https://the-lamp.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://thelamp.site/TheLampBanner.png">
 
-  <!-- Additional Meta for SEO -->
-  <meta name="robots" content="noindex, nofollow">
+  <!-- Canonical Tag for SEO -->
+  <link rel="canonical" href="https://thelamp.site" />
+
+  <!-- Redirection Script -->
+  <script>
+    (function () {
+      const officialSiteURL = "https://thelamp.site";
+      // Redirecting to the new domain
+      window.location.href = officialSiteURL;
+    })();
+  </script>
 </head>
 <body>
-  <div style="text-align: center; font-family: Arial, sans-serif; margin-top: 50px;">
-    <h1>The Lamp RKP</h1>
-    <p>It seems like the page you are looking for doesn't exist. You are being redirected to 
-      <a href="https://thelamp.site">The Lamp RKP</a>.
-    </p>
-    <p>If you tried accessing <strong>/RKP</strong>, you will be redirected to 
-      <a href="https://the-lamp.github.io">The Lamp GitHub Page</a>.
-    </p>
+  <div style="text-align: center; font-family: Arial, sans-serif; margin: 50px auto; max-width: 600px;">
+    <h1>Welcome to The Lamp</h1>
+    <p>We have moved to a new domain!</p>
+    <p>You are being redirected to our official website: <a href="https://thelamp.site">https://thelamp.site</a></p>
+    <p>If the redirection doesn’t happen automatically, click <a href="https://thelamp.site">here</a>.</p>
     <noscript>
-      <p>If you are not redirected automatically, please 
-        <a href="https://thelamp.site">click here</a> to visit The Lamp RKP.
-      </p>
-      <p>Or, <a href="https://the-lamp.github.io">visit the GitHub page</a> manually.</p>
+      <p>JavaScript is required for automatic redirection. Please <a href="https://thelamp.site">click here</a> to visit our new website.</p>
     </noscript>
   </div>
 </body>
