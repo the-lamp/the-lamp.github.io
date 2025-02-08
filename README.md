@@ -16,7 +16,7 @@ I have built websites using **[HTML](https://thelamp.site/)**, **[CSS](https://t
 
 <p align="center">
   <a href="https://thelamp.site" target="_blank">
-    <img src="https://the-lamp.github.io/RKP2/tenor.gif" width="320"/>
+    <img src="tenor.gif" width="320"/>
   </a>
 </p>
 
@@ -27,13 +27,13 @@ I have built websites using **[HTML](https://thelamp.site/)**, **[CSS](https://t
 </p>
 
 <p align="center">
-  <a href="https://thelamp.site/books" target="_blank">
+  <a href="https://thelamp.site/Books/" target="_blank">
     <img src="https://img.shields.io/badge/📖_Read%20My%20Books-8A2BE2?style=for-the-badge&logo=openbook&labelColor=black" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.battlegroundsmobileindia.com" target="_blank">
+  <a href="https://thelamp.site/BGMI/" target="_blank">
     <img src="https://img.shields.io/badge/🎮_Play%20BGMI%20With%20Me-FFD700?style=for-the-badge&logo=pubg&labelColor=black" />
   </a>
 </p>
