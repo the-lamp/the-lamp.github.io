@@ -1,24 +1,68 @@
-# <span style="color: #FFA500;">✨ The Lamp RKP ✨</span>  
+# [©The Lamp RKP](https://thelamp.site)
 
-Welcome to **The Lamp RKP** repository — your **gateway to creativity, technology, and inspiration!**  
-Dive into my world at **[TheLamp.site](https://thelamp.site)** and explore the brilliance!  
+<h1 align="center">
+  <a href="https://thelamp.site" target="_blank">
+    <img src="https://readme-typing-svg.demolab.com?font=Kaushan+Script&size=40&duration=3000&pause=1000&color=0000FF&center=true&vCenter=true&multiline=true&width=700&height=80&lines=✨ The+Lamp+RKP ✨" alt="The Lamp RKP" />
+  </a>
+</h1>
 
----
-
-## 🚀 **Explore The Lamp**  
-Ready to illuminate your path? Click below and step into **The Lamp** universe!  
-
-[![Visit thelamp.site](https://img.shields.io/badge/Visit-TheLamp.site-orange?style=for-the-badge&logo=firefox)](https://thelamp.site)  
-
----
-
-## 🌟 **Let's Connect!**  
-Want to collaborate or just say hi? Find me here:  
-
-📧 **Email**: [contact@thelamp.site](mailto:contact@thelamp.site)  
-📸 **Instagram**: [@cyb_rahul](https://instagram.com/cyb_rahul)  
-🌍 **Website**: [The Lamp RKP](https://thelamp.site/)  
+Hey, I'm **[Rahul Kumar Puri](https://thelamp.site/Founder/)**. I am a Web Developer and Writer from Motihari, Bihar.  
+I have built websites using **[HTML](https://thelamp.site/)**, **[CSS](https://thelamp.site/)**, and **[JavaScript](https://thelamp.site/)**.
 
 ---
 
-#### *Crafted with ❤️ by* **Rahul Kumar Puri**
+## 🚀 **[Explore The Lamp](https://thelamp.site)**  
+🛸 **[Step into my universe of brilliance and innovation! Click below to experience The Lamp RKP:](https://thelamp.site)**  
+
+<p align="center">
+  <a href="https://thelamp.site" target="_blank">
+    <img src="tenor.gif" width="320"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://thelamp.site" target="_blank">
+    <img src="https://shields.io/badge/🚀_Visit%20THELAMP.SITE-F57C00?style=for-the-badge&logo=firefox&logoColor=white&labelColor=000&animation=glow" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://thelamp.site/books" target="_blank">
+    <img src="https://img.shields.io/badge/📖_Read%20My%20Books-8A2BE2?style=for-the-badge&logo=openbook&labelColor=black" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.battlegroundsmobileindia.com" target="_blank">
+    <img src="https://img.shields.io/badge/🎮_Play%20BGMI%20With%20Me-FFD700?style=for-the-badge&logo=pubg&labelColor=black" />
+  </a>
+</p>
+
+---
+
+## 🌟 **[Let's Connect!](https://thelamp.site/Contact/)**  
+📩 **[Feel free to reach out for collaboration, ideas, or just a friendly chat:](#)**  
+
+<div align="center">
+
+<a href="mailto:contact@thelamp.site">
+  <img src="https://img.shields.io/badge/📧_Email-D14836?style=flat-square&logo=gmail&logoColor=white" />
+</a>  
+<a href="https://instagram.com/cyb_rahul" target="_blank">
+  <img src="https://img.shields.io/badge/📸_Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" />
+</a>  
+<a href="https://thelamp.site" target="_blank">
+  <img src="https://img.shields.io/badge/🌍_Website-0078D7?style=flat-square&logo=firefox&logoColor=white" />
+</a>  
+
+</div>
+
+---
+
+<h3 align="center">
+  <a href="https://thelamp.site" target="_blank">
+    <img src="https://media.tenor.com/whgQwNlVvNkAAAAi/xero-code.gif" width="80"/>  
+  </a>
+  <br>
+  <i>Crafted with ❤️ by <a href="https://thelamp.site/Founder/" target="_blank">Rahul Kumar Puri</a></i>
+</h3>
