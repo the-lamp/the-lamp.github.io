@@ -16,7 +16,7 @@ I have built websites using **[HTML](https://thelamp.site/)**, **[CSS](https://t
 
 <p align="center">
   <a href="https://thelamp.site" target="_blank">
-    <img src="RKP2/tenor.gif" width="320"/>
+    <img src="https://the-lamp.github.io/RKP2/tenor.gif" width="320"/>
   </a>
 </p>
 
