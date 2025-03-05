@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: Rahul Kumar Puri
+Designer: The Lamp RKP Team
+Writer: The Lamp Organization
+Contact: contact@thelamp.site
+Website: https://thelamp.site
+
+/* THANKS */
+Thanks to open-source projects, developers, and supporters!
+
+/* TECHNOLOGY */
+Built with: HTML, CSS, JavaScript
