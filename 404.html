@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Page Not Found | The Lamp RKP</title>
+  <meta name="description" content="Oops! The page you're looking for doesn't exist. Return to The Lamp homepage or explore our sitemap to find what you need.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Rahul Kumar Puri">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="stylesheet" href="Styles.css">
+
+  
+  <!-- Force HTTPS without JavaScript -->
+  <meta http-equiv="refresh" content="0; url=https://thelamp.site">
+  <link rel="canonical" href="https://thelamp.site">
+
+  <script>
+    // Backup HTTPS Redirect via JavaScript
+    if (location.protocol !== 'https:') {
+      location.replace('https://' + location.host + location.pathname + location.search);
+    }
+
+    // Remove "www" if present
+    if (location.hostname.startsWith('www.')) {
+      location.href = location.protocol + '//' + location.hostname.replace('www.', '') + location.pathname + location.search;
+    }
+
+    // Redirect to Dashboard after 5 seconds
+    setTimeout(() => {
+      window.location.href = "https://thelamp.site/Dashboard";
+    }, 5000);
+  </script>
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="overlay"></div>
+  <div class="terminal">
+    <h1>404<span class="errorcode">Error</span></h1>
+    <p class="output">Lagta hai ki aapne galat link open kar liya</p>
+    <p class="output">Koi baat nahi, hum aapko sahi link par bhej rahe hain</p>
+    <p class="output"><a href="https://thelamp.site/Home">Click here</a>.</p>
+  </div>
+</body>
+</html>
