@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .course-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .course-box:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff5722;
+            margin: 10px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .call-btn, .whatsapp-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .call-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="course-box">
+            <img src="course-image.jpg" alt="Course Image">
+            <h2>Advanced Web Development</h2>
+            <p>Learn HTML, CSS, JavaScript with real-world projects. Perfect for beginners and professionals.</p>
+            <div class="price">₹ 2999</div>
+            
+            <div class="buttons">
+                <a href="tel:+919876543210" class="call-btn">📞 Call Now</a>
+                <a href="#" class="whatsapp-btn" onclick="sendWhatsAppMessage()">💬 WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendWhatsAppMessage() {
+            var courseName = "Advanced Web Development";
+            var price = "₹ 2999";
+            var phone = "919876543210"; // WhatsApp Number
+            var message = `Hello Karandeep, 
+Mai aapka ye course (${courseName}) kharidane ke liye taiyar hu jiska price (${price}) hai. 
+Please mujhe apna PhonePe scanner bhejiye taki mai paise uspar bhej saku.`; 
+            var url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>
