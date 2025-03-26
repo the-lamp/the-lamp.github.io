@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey - Timeline</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+        }
+        h1 { margin: 0; font-size: 2rem; }
+        p { font-size: 1.2rem; }
+
+        /* Timeline Styles */
+        .timeline {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            position: relative;
+        }
+        .timeline-item {
+            background: #1e1e1e;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        .timeline-item.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline-item:before {
+            content: attr(data-year);
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: #ffcc00;
+            color: #000;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+        }
+
+        /* CTA Button */
+        .cta {
+            display: inline-block;
+            background: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            margin: 20px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .cta:hover { background: #e6b800; }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 40px;
+            padding: 20px;
+            background: #222;
+        }
+        .contact a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .contact a:hover { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Journey</h1>
+        <p>A Story of My Growth & Success</p>
+    </header>
+
+    <section class="timeline">
+        <div class="timeline-item" data-year="25 July 2007">
+            <h2>Born</h2>
+            <p>The journey started!</p>
+        </div>
+        <div class="timeline-item" data-year="2016">
+            <h2>Realized the Importance of Money</h2>
+            <p>First time I understood that money is crucial.</p>
+        </div>
+        <div class="timeline-item" data-year="2020">
+            <h2>First Online Earnings</h2>
+            <p>Earned ₹700 through Hugo & Helo App.</p>
+        </div>
+        <div class="timeline-item" data-year="2022">
+            <h2>First Poem</h2>
+            <p>Wrote a poem for my teacher.</p>
+        </div>
+        <div class="timeline-item" data-year="June 2022">
+            <h2>Affiliate Marketing</h2>
+            <p>Earned ₹1400 by selling guitars & watches.</p>
+        </div>
+        <div class="timeline-item" data-year="March 2023">
+            <h2>Ethical Hacking Journey</h2>
+            <p>Started ethical hacking but couldn't continue.</p>
+        </div>
+        <div class="timeline-item" data-year="June 2024">
+            <h2>Started Web Development</h2>
+            <p>My coding journey began!</p>
+        </div>
+        <div class="timeline-item" data-year="24 February 2025">
+            <h2>First Web Development Client</h2>
+            <p>Earned ₹1500 from my first project.</p>
+        </div>
+        <div class="timeline-item" data-year="Present">
+            <h2>Finding More Clients</h2>
+            <p>Expanding my web development career.</p>
+        </div>
+    </section>
+
+    <a href="https://wa.me/your-number" class="cta">Hire Me for Web Development</a>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:your-email@example.com">📧 Email Me</a></p>
+        <p><a href="https://wa.me/your-number">📱 WhatsApp Me</a></p>
+    </section>
+
+    <script>
+        // Timeline Animation
+        const items = document.querySelectorAll(".timeline-item");
+
+        function showItems() {
+            const triggerBottom = window.innerHeight * 0.9;
+
+            items.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < triggerBottom) {
+                    item.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", showItems);
+        showItems();
+    </script>
+
+</body>
+</html>
